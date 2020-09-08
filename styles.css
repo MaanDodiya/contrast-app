@@ -56,21 +56,23 @@ p.bold-italic {
   height: 100% !important;
   /* margin-left: 10%;
   margin-top: 2%; */
-  margin: 2% 5% 0 5%; 
+  margin: 2% 5% 0 5%;
   padding-top: 10px;
   text-align: center;
   height: auto;
   border-radius: 10px;
 }
 
-.back, .fore{
+.back,
+.fore {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.back button, .fore button {
+.back button,
+.fore button {
   margin-left: 10px;
   outline: none;
   border: 0;
@@ -79,12 +81,14 @@ p.bold-italic {
   width: 20px;
 }
 
-.back button:hover, .fore button:hover {
+.back button:hover,
+.fore button:hover {
   outline: none;
   cursor: pointer;
 }
 
-.back button:active, .fore button:active {
+.back button:active,
+.fore button:active {
   outline: none;
 }
 
@@ -119,7 +123,7 @@ textarea {
   height: 500px;
   padding: 10px;
   border: none;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 textarea:focus {
@@ -132,9 +136,8 @@ footer {
 }
 
 @media (max-width: 1080px) {
-  body {
+  /* body {
     /* display: none; */
-  }
 
   .container {
     padding: 0;
@@ -145,8 +148,26 @@ footer {
     margin: auto auto 20px auto;
   }
 
+  .text {
+    font-size: 10vw;
+  }
+
   .info {
-    width: 70%
-    ;
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .color-info p {
+    font-size: 3.5vw;
+  }
+
+  .info button {
+    font-size: 3.5vw;
+  }
+
+  textarea {
+    font-size: 3.5vw;
+    height: 100vw;
   }
 }
