@@ -25,11 +25,18 @@ var changeColors = function () {
   document.querySelector(".color-info").style.color = color.primary;
   document.querySelectorAll("button")[0].style.backgroundColor = color.primary;
   document.querySelectorAll("button")[1].style.backgroundColor = color.primary;
+  document.querySelectorAll("button")[2].style.backgroundColor = color.primary;
+  document.querySelectorAll("button")[3].style.backgroundColor = color.primary;
+  document.querySelector("textarea").style.backgroundColor = color.primary;
+  document.querySelector("footer").style.color = color.primary;
 
   document.querySelector(".text").style.color = color.secondary;
   document.querySelector(".info").style.backgroundColor = color.secondary;
   document.querySelectorAll("button")[0].style.color = color.secondary;
   document.querySelectorAll("button")[1].style.color = color.secondary;
+  document.querySelectorAll("button")[2].style.color = color.secondary;
+  document.querySelectorAll("button")[3].style.color = color.secondary;
+  document.querySelector("textarea").style.color = color.secondary;
 
   document.querySelector(".primary").textContent =
     "Background Color: " + color.primary;
