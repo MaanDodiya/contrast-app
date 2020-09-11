@@ -1,44 +1,43 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Contrast</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <title>Contrast</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="text">
-      <p class="thin">Maan Dodiya</p>
-      <p class="thin-italic">Maan Dodiya</p>
-      <p class="regular">Maan Dodiya</p>
-      <p class="regular-italic">Maan Dodiya</p>
-      <p class="bold">Maan Dodiya</p>
-      <p class="bold-italic">Maan Dodiya</p>
-    </div>
-    <div class="info">
-      <div class="color-info">
-        <div class="back">
-          <p class="primary">Background Color: #000000</p>
-          <button></button>
-        </div>
-        <div class="fore">
-          <p class="secondary">Foreground Color: #ffffff</p>
-          <button></button>
-        </div>
+  <body>
+    <div class="container">
+      <div class="text">
+        <p class="thin">Maan Dodiya</p>
+        <p class="thin-italic">Maan Dodiya</p>
+        <p class="regular">Maan Dodiya</p>
+        <p class="regular-italic">Maan Dodiya</p>
+        <p class="bold">Maan Dodiya</p>
+        <p class="bold-italic">Maan Dodiya</p>
       </div>
-      <div class="color-options">
-        <button class="button change" onclick="changeColors()">Change</button>
-        <button class="button invert" onclick="invertColors()">Invert</button>
-      </div>
-      <textarea>
+      <div class="info">
+        <div class="color-info">
+          <div class="back">
+            <p class="primary">Background Color: #000000</p>
+            <button onclick="copyBack()">C</button>
+          </div>
+          <div class="fore">
+            <p class="secondary">Foreground Color: #ffffff</p>
+            <button onclick="copyFore()">C</button>
+          </div>
+        </div>
+        <div class="color-options">
+          <button class="button change" onclick="changeColors()">Change</button>
+          <button class="button invert" onclick="invertColors()">Invert</button>
+        </div>
+        <textarea>
 TYPE HERE
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates itaque a accusamus quibusdam ut possimus iste corrupti delectus. Molestias, similique vitae impedit eligendi fuga sint saepe quas dolorum voluptatum tempore.</textarea>
-      <footer>2di Productions, 2020</footer>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates itaque a accusamus quibusdam ut possimus iste corrupti delectus. Molestias, similique vitae impedit eligendi fuga sint saepe quas dolorum voluptatum tempore.</textarea
+        >
+        <footer>2di Productions, 2020</footer>
+      </div>
     </div>
-  </div>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="js/script.js"></script>
 </html>
