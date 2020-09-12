@@ -62,7 +62,7 @@ var copyBack = function () {
   input.select();
   document.execCommand("copy");
   document.body.removeChild(input);
-  var message = "Copied to Clipboard" + color.primary;
+  var message = "Copied to Clipboard " + color.primary;
   alert(message);
 };
 
@@ -73,6 +73,6 @@ var copyFore = function () {
   input.select();
   document.execCommand("copy");
   document.body.removeChild(input);
-  var message = "Copied to Clipboard" + color.primary;
+  var message = "Copied to Clipboard " + color.secondary;
   alert(message);
 };
