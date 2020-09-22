@@ -25,7 +25,6 @@ var giveRandomColors = function () {
   for (var i = 0; i < 6; i++) {
     var number = getRealRandomInt(0, 15);
     returnColor.primary += number.toString(16);
-    console.log(number);
     returnColor.secondary += (15 - number).toString(16);
   }
   return returnColor;
