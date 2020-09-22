@@ -15,14 +15,16 @@ body {
 }
 
 .container {
+  max-height: 100%;
+  width: 100%;
   display: flex;
-  padding-left: 5%;
-  padding-top: 1%;
+  padding: 3vh 8vw 5vh 5vw;
+  justify-content: space-between;
 }
 
 .text {
   font-family: "Poppins", sans-serif;
-  font-size: 80px;
+  font-size: 10vh;
 }
 
 p.thin {
@@ -53,15 +55,13 @@ p.bold-italic {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 35%;
+  width: 40vw;
   height: 100% !important;
-  /* margin-left: 10%;
-  margin-top: 2%; */
-  margin: 2% 5% 0 5%;
-  padding-top: 10px;
+  margin: 3vh 0 0 5vw;
   text-align: center;
   height: auto;
   border-radius: 10px;
+  padding: 20px 20px 0px;
 }
 
 .back,
@@ -120,9 +120,9 @@ p.bold-italic {
 textarea {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  margin: 20px auto 20px auto;
-  width: 90%;
-  height: 500px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  height: 62vh;
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -133,8 +133,16 @@ textarea:focus {
 }
 
 footer {
-  margin-bottom: 5%;
   font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-right: 3vw;
+  }
+  .info {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -148,6 +156,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: auto auto 20px auto;
+    max-height: none;
   }
 
   .text {
@@ -159,17 +168,17 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   .color-info p {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .info button {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
   textarea {
-    font-size: 3.5vw;
+    font-size: 3vw;
     height: 100vw;
   }
 
@@ -177,5 +186,8 @@ footer {
   .fore button {
     height: 4vw;
     width: 4vw;
+  }
+  footer {
+    font-size: 4vw;
   }
 }

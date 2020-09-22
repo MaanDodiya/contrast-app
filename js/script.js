@@ -7,13 +7,25 @@ var getRandomInt = function () {
   return Math.floor(Math.random() * Math.floor(6));
 };
 
+function getRealRandomInt(min, max) {
+  var byteArray = new Uint8Array(1);
+  window.crypto.getRandomValues(byteArray);
+
+  var range = max - min + 1;
+  var max_range = 256;
+  if (byteArray[0] >= Math.floor(max_range / range) * range)
+    return getRandomInt(min, max);
+  return min + (byteArray[0] % range);
+}
+
 var giveRandomColors = function () {
   var returnColor = {};
   returnColor.primary = "#";
   returnColor.secondary = "#";
   for (var i = 0; i < 6; i++) {
-    var number = getRandomInt();
+    var number = getRealRandomInt(0, 15);
     returnColor.primary += number.toString(16);
+    console.log(number);
     returnColor.secondary += (15 - number).toString(16);
   }
   return returnColor;
