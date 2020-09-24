@@ -8,4 +8,4 @@ Don't worry, this Web App will give you two contrasting colors in a single click
 
 - [x] Add a custom input text box for better UX.
 - [x] Add a copy to clipboard option.
-- [ ] Add an option to chose the variance of the two colors.
+- [x] Add an option to chose the variance of the two colors.
